@@ -22,6 +22,8 @@ You are tasked with building on top an existing client/server application and co
 
 The server should accept client requests and create a new thread to manage each client's socket connection and provide the client with quotes at their requested interval. The server will use the `interval` to determine how frequently to fetch quotes from the provided API and respond to the client. 
 
+The server should remain open to new requests until the server is forcibly stopped.
+
 *Due to latency when communicating with Stock API, the timing for the interval does not have have extreme precision*.
 
 The response from the server should be changed from a formatted string to a marshalled XML file. The required format of this response is shown below.
@@ -50,8 +52,6 @@ The response from the server should be changed from a formatted string to a mars
 ```
 
 Once the server sends the XML response to the client, the client application should save the XML file to the client's machine. The location of where this file is stored is up to you.
-
-The server should remain open to new requests until the server is forcibly stopped.
 
 ## Additional Information
 

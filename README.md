@@ -22,7 +22,7 @@ The server and client both close after a single request is made.
 
 You are tasked with building on top an existing client/server application and configuring it to support concurrent requests. The DTO's will need to be expanded to allow the client to provide an 'interval' (1-10 seconds) which the server will use in order to continue sending real-time quotes back to the client application. You will also be enhancing the server response to return XML as a response. The client will then save the XML response to an XML file on the client machine.
 
-The server should accept client requests and create a new thread to manage each client's socket connection and provide the client with quotes at their requested interval. The server will use the `interval` to determine how frequently to fetch quotes from the provided API and respond to the client. 
+The server should accept client requests and create a new thread to manage each client's socket connection and provide the client with quotes at their requested interval. The server will use the `interval` to determine how frequently to fetch quotes from the provided API and respond to the client. The thread serving the client with responses should remain open until either the client closes their application or the server is forcibly stopped.
 
 The server should remain open to new requests until the server is forcibly stopped.
 
@@ -53,7 +53,7 @@ The response from the server should be changed from a formatted string to a mars
 </quotes>
 ```
 
-Once the server sends the XML response to the client, the client application should save the XML file to the client's machine. The location of where this file is stored is up to you.
+Once the server sends the XML response to the client, the client application should save the XML file to the client's machine. The location of where this file is stored is up to you. Each time the client gets a response, it should overwrite the existing file.
 
 ## Additional Information
 

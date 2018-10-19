@@ -1,9 +1,11 @@
 package com.cooksys.client;
 
+import com.cooksys.client.dto.QuoteField;
+import com.cooksys.client.dto.QuoteRequest;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.net.Socket;
 import java.util.Arrays;
@@ -29,23 +31,24 @@ public class Client {
 
             JAXBContext context = JAXBContext.newInstance(QuoteField.class, QuoteRequest.class);
             Marshaller marshaller = context.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-            // Marshal to socket
-            marshaller.marshal(request, System.out);
-            marshaller.marshal(request, socket.getOutputStream());
+            // Marshal request to stringWriter
+            StringWriter stringWriter = new StringWriter();
+            marshaller.marshal(request, stringWriter);
 
-            socket.getOutputStream().flush();
+            // Create bufferedWriter from socket outpustream and write stringWriter to out.write()
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            out.write(stringWriter.toString());
+            out.newLine();
+            out.flush();
 
-            // Get response
+            // Get responses
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String message;
             while (socket.isConnected() && (message = in.readLine()) != null) {
                 System.out.println(message);
             }
 
-//            Thread t = new Thread(new QuoteReader(socket));
-//            t.start();
         } catch (JAXBException | IOException e) {
             e.printStackTrace();
         }

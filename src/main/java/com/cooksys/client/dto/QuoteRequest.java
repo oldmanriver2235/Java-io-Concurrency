@@ -1,4 +1,4 @@
-package com.cooksys.client;
+package com.cooksys.client.dto;
 
 import javax.xml.bind.annotation.*;
 import java.util.Set;

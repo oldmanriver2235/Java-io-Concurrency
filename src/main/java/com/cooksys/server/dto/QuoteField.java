@@ -1,4 +1,4 @@
-package com.cooksys.client;
+package com.cooksys.server.dto;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

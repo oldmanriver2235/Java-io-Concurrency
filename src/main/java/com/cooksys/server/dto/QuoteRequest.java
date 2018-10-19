@@ -1,4 +1,4 @@
-package com.cooksys.server;
+package com.cooksys.server.dto;
 
 import javax.xml.bind.annotation.*;
 import java.util.Set;

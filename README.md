@@ -22,6 +22,8 @@ The server and client both close after a single request is made.
 
 You are tasked with building on top an existing client/server application and configuring it to support concurrent requests. The DTO's will need to be expanded to allow the client to provide an 'interval' (1-10 seconds) which the server will use in order to continue sending real-time quotes back to the client application. You will also be enhancing the server response to return XML as a response. The client will then save the XML response to an XML file on the client machine.
 
+You can change the hard-coded values on the client side to get more example data. The `Additional Notes` section contains more information regarding these values and contains an extra-credit challenge to make the application more flexible.
+
 The server should accept client requests and create a new thread to manage each client's socket connection and provide the client with quotes at their requested interval. The server will use the `interval` to determine how frequently to fetch quotes from the provided API and respond to the client. The thread serving the client with responses should remain open until either the client closes their application or the server is forcibly stopped.
 
 The server should remain open to new requests until the server is forcibly stopped.
@@ -57,6 +59,9 @@ Once the server sends the XML response to the client, the client application sho
 
 ## Additional Information
 
+* The client's request data is hard-coded and does not need to be changed. For 'extra-credit', you can implement functionality that allows this information to be read in from an XML file (easy) OR read in from the command-line (hard). It is not required that it changed from what is given in the skeleton.
+
 * The available fields have already been included in the project skeleton inside of `QuoteField.java` - a DTO [enum](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html) annoted with JAXB annotations.
 
 * The client will be passing a single set of fields to view. They should not be able to view different fields for different ticker symbols.
+

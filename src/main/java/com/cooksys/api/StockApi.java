@@ -1,4 +1,4 @@
-package com.cooksys.server.stock;
+package com.cooksys.api;
 
 import com.cooksys.dto.QuoteRequest;
 import pl.zankowski.iextrading4j.api.stocks.Quote;

@@ -2,8 +2,8 @@ package com.cooksys.server;
 
 import com.cooksys.dto.QuoteField;
 import com.cooksys.dto.QuoteRequest;
-import com.cooksys.server.stock.StockApi;
-import com.cooksys.server.stock.StockUtils;
+import com.cooksys.api.StockApi;
+import com.cooksys.api.StockUtils;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 import javax.xml.bind.JAXBContext;

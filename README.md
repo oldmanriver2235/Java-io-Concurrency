@@ -49,7 +49,7 @@ The response from the server should be changed from a formatted string to a mars
         <symbol>FB</symbol>
         <fields>
             <high>155.54</high>
-            <latestPrice></latestPrice>
+            <latestPrice>155.07</latestPrice>
         </fields>
     </quote>
 </quotes>

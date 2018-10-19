@@ -1,4 +1,4 @@
-package com.cooksys.dto;
+package com.cooksys.ftd.ticker.dto;
 
 import javax.xml.bind.annotation.*;
 import java.util.Set;

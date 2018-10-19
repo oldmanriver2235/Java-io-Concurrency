@@ -1,8 +1,8 @@
-package com.cooksys.client;
+package com.cooksys.ftd.ticker.dto.client;
 
 
-import com.cooksys.dto.QuoteField;
-import com.cooksys.dto.QuoteRequest;
+import com.cooksys.ftd.ticker.dto.QuoteField;
+import com.cooksys.ftd.ticker.dto.QuoteRequest;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Client {
+public class TickerClient {
 
     public static void main(String[] args) {
 

@@ -1,9 +1,9 @@
-package com.cooksys.server;
+package com.cooksys.ftd.ticker.dto.server;
 
-import com.cooksys.dto.QuoteField;
-import com.cooksys.dto.QuoteRequest;
-import com.cooksys.api.StockApi;
-import com.cooksys.api.StockUtils;
+import com.cooksys.ftd.ticker.dto.QuoteField;
+import com.cooksys.ftd.ticker.dto.QuoteRequest;
+import com.cooksys.ftd.ticker.dto.api.StockApi;
+import com.cooksys.ftd.ticker.dto.api.StockUtils;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 import javax.xml.bind.JAXBContext;
@@ -14,7 +14,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Set;
 
-public class Server {
+public class TickerServer {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
-package com.cooksys.api;
+package com.cooksys.ftd.ticker.dto.api;
 
-import com.cooksys.dto.QuoteField;
+import com.cooksys.ftd.ticker.dto.QuoteField;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 import java.util.Set;

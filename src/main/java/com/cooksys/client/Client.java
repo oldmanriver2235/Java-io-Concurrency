@@ -1,7 +1,8 @@
 package com.cooksys.client;
 
-import com.cooksys.client.dto.QuoteField;
-import com.cooksys.client.dto.QuoteRequest;
+
+import com.cooksys.dto.QuoteField;
+import com.cooksys.dto.QuoteRequest;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

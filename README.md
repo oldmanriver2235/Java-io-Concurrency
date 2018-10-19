@@ -4,7 +4,9 @@
 
 For this assignment, you will be creating a 'custom' stock ticker. Clients will send the [Ticker Symbol](https://en.wikipedia.org/wiki/Ticker_symbol)s that they want to get quotes on, as well as fields that they may be interested in. Example fields are 'high', 'low', 'latest price', etc. 
 
-#### What you are given
+### What you are given
+
+* This is a description of what the skeleton **currently** does.*
 
 This assignment comes with a skeleton which contains working client/server applications. Below is a description of what each application does and how they communicate with each other.
 

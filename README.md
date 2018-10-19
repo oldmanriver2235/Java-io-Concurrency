@@ -12,6 +12,8 @@ When the client application is started, it creates in memory a hard-coded `Quote
 
 When the server is started, it waits for an incoming client socket connection via `server.accept()`. Once the server recieves a connection, it creates a `BufferedReader` and `StringReader` that it then uses to unmarshall the 'stringified' XML request. Once it has the `QuoteRequest` object, it makes a call to a provided `StockApi.java` method. This class contains a static method that will fetch a `Set` of `Quote` objects from an [open-source stock market API](https://iextrading.com/developer/docs/) using a [3rd party Java wrapper library](https://github.com/WojciechZankowski/iextrading4j) that wraps this API in easy-to-use Java classes and methods. Once the server gets the set of quotes, it then uses the provided `StockUtils` class to format the quotes to a string which it then sends back to the client via a BufferedWriter connected to the client socket.
 
+The server and client both close after a single request is made.
+
 ---
 
 # Assignment Requirements
@@ -48,6 +50,8 @@ The response from the server should be changed from a formatted string to a mars
 ```
 
 Once the server sends the XML response to the client, the client application should save the XML file to the client's machine. The location of where this file is stored is up to you.
+
+The server should remain open to new requests until the server is forcibly stopped.
 
 ## Additional Information
 

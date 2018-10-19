@@ -49,6 +49,4 @@ The response from the server should be changed from a formatted string to a mars
 
 * The available fields have already been included in the project skeleton inside of `QuoteField.java` - a DTO [enum](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html) annoted with JAXB annotations.
 
-* The client will be passing a single set of fields to view. They should not be able to view different fields for different ticker symbols
-
-`
+* The client will be passing a single set of fields to view. They should not be able to view different fields for different ticker symbols.

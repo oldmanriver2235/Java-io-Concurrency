@@ -1,4 +1,4 @@
-package com.cooksys.ftd.ticker.dto.api;
+package com.cooksys.ftd.ticker.api;
 
 import com.cooksys.ftd.ticker.dto.QuoteRequest;
 import pl.zankowski.iextrading4j.api.stocks.Quote;

@@ -1,4 +1,4 @@
-package com.cooksys.ftd.ticker.dto.client;
+package com.cooksys.ftd.ticker.client;
 
 
 import com.cooksys.ftd.ticker.dto.QuoteField;

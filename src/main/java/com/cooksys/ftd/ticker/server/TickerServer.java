@@ -1,9 +1,9 @@
-package com.cooksys.ftd.ticker.dto.server;
+package com.cooksys.ftd.ticker.server;
 
 import com.cooksys.ftd.ticker.dto.QuoteField;
 import com.cooksys.ftd.ticker.dto.QuoteRequest;
-import com.cooksys.ftd.ticker.dto.api.StockApi;
-import com.cooksys.ftd.ticker.dto.api.StockUtils;
+import com.cooksys.ftd.ticker.api.StockApi;
+import com.cooksys.ftd.ticker.api.StockUtils;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 import javax.xml.bind.JAXBContext;
@@ -26,7 +26,7 @@ public class TickerServer {
             ServerSocket server = new ServerSocket(3000);
             Socket client = server.accept();
 
-            // Create buffered reader and string reader to read request from client socket inputstream
+            // Create buffered reader and string reader to read a request from a client socket inputstream
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
             StringReader stringReader = new StringReader(bufferedReader.readLine());
 

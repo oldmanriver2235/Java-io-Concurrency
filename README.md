@@ -47,6 +47,8 @@ The response from the server should be changed from a formatted string to a mars
 </quotes>
 ```
 
+Once the server sends the XML response to the client, the client application should save the XML file to the client's machine. The location of where this file is stored is up to you.
+
 ## Additional Information
 
 * The available fields have already been included in the project skeleton inside of `QuoteField.java` - a DTO [enum](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html) annoted with JAXB annotations.

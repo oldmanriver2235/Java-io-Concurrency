@@ -1,7 +1,7 @@
 package com.cooksys.server;
 
-import com.cooksys.server.dto.QuoteField;
-import com.cooksys.server.dto.QuoteRequest;
+import com.cooksys.dto.QuoteField;
+import com.cooksys.dto.QuoteRequest;
 import com.cooksys.server.stock.StockApi;
 import com.cooksys.server.stock.StockUtils;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
@@ -30,7 +30,7 @@ public class Server {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
             StringReader stringReader = new StringReader(bufferedReader.readLine());
 
-            // Unmarshal stringReader to QuoteRequest object
+            // Unmarshall stringReader to QuoteRequest object
             QuoteRequest quoteRequest = (QuoteRequest) unmarshaller.unmarshal(stringReader);
 
             // Fetch quotes for each

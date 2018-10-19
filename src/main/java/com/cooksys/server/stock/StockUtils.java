@@ -1,6 +1,6 @@
 package com.cooksys.server.stock;
 
-import com.cooksys.server.dto.QuoteField;
+import com.cooksys.dto.QuoteField;
 import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 import java.util.Set;

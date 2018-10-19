@@ -6,7 +6,7 @@ For this assignment, you will be creating a 'custom' stock ticker. Clients will 
 
 ### What you are given
 
-* This is a description of what the skeleton **currently** does.*
+*This is a description of what the skeleton **currently** does.*
 
 This assignment comes with a skeleton which contains working client/server applications. Below is a description of what each application does and how they communicate with each other.
 

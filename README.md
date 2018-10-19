@@ -2,7 +2,7 @@
 
 # Assignment Overview
 
-For this assignment, you will be creating a 'custom' stock ticker. Clients will send the [Ticker Symbol](https://en.wikipedia.org/wiki/Ticker_symbol)s that they want to get quotes on, as well as fields that they may be interested in. Example fields are 'high', 'low', 'latest price', etc. 
+For this assignment, you will be expanding and enhancing a client/server **Stock Ticker** application. Clients will send the [Ticker Symbol](https://en.wikipedia.org/wiki/Ticker_symbol)s that they want to get quotes on, as well as fields that they may be interested in. Example fields are 'high', 'low', 'latest price', etc. 
 
 ### What you are given
 

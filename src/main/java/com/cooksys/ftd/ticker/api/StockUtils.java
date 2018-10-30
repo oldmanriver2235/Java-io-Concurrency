@@ -1,10 +1,11 @@
 
-	package com.cooksys.ftd.ticker.api;
+package com.cooksys.ftd.ticker.api;
 
-	import com.cooksys.ftd.ticker.dto.QuoteField;
 	import java.util.Iterator;
-	import java.util.Set;
-	import pl.zankowski.iextrading4j.api.stocks.Quote;
+import java.util.Set;
+
+import com.cooksys.ftd.ticker.dto.QuoteField;
+import pl.zankowski.iextrading4j.api.stocks.Quote;
 
 	public class StockUtils
 	{
@@ -16,7 +17,9 @@
 	    {
 	      Quote quote = (Quote)localIterator1.next();
 	      quoteString.append("\n").append(quote.getSymbol()).append(" -");
-	      localIterator2 = fields.iterator(); continue;QuoteField field = (QuoteField)localIterator2.next();
+	      localIterator2 = fields.iterator();
+	      
+	      QuoteField field = (QuoteField)localIterator2.next();
 	      switch (field)
 	      {
 	      case CLOSE: 
@@ -44,5 +47,3 @@
 	    return quoteString.toString();
 	  }
 	}
-
-}

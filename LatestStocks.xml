@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<quotes>
+    <quote>
+        <symbol>NKE</symbol>
+        <fields>
+            <changePercent>0.00167</changePercent>
+            <change>0.12</change>
+            <latestPrice>72.19</latestPrice>
+        </fields>
+    </quote>
+    <quote>
+        <symbol>AMZN</symbol>
+        <fields>
+            <changePercent>-0.06326</changePercent>
+            <change>-103.93</change>
+            <latestPrice>1538.88</latestPrice>
+        </fields>
+    </quote>
+    <quote>
+        <symbol>NIO</symbol>
+        <fields>
+            <changePercent>-0.0252</changePercent>
+            <change>-0.16</change>
+            <latestPrice>6.19</latestPrice>
+        </fields>
+    </quote>
+    <quote>
+        <symbol>DVMT</symbol>
+        <fields>
+            <changePercent>-0.01933</changePercent>
+            <change>-1.71</change>
+            <latestPrice>86.76</latestPrice>
+        </fields>
+    </quote>
+    <quote>
+        <symbol>TWTR</symbol>
+        <fields>
+            <changePercent>0.00093</changePercent>
+            <change>0.03</change>
+            <latestPrice>32.39</latestPrice>
+        </fields>
+    </quote>
+</quotes>

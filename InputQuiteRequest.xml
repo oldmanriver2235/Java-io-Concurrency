@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<quoteRequest>
+    <fields>
+        <field>LATEST_PRICE</field>
+    </fields>
+    <symbols>
+        <symbol>NIO</symbol>
+        <symbol>TWTR</symbol>
+        <symbol>DVMT</symbol>
+        <symbol>NKE</symbol>
+        <symbol>AMZN</symbol>
+    </symbols>
+    <interval>0</interval>
+</quoteRequest>
